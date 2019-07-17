@@ -9,9 +9,9 @@ import (
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-	"github.com/sdvdxl/falcon-message/config"
-	"github.com/sdvdxl/falcon-message/sender"
-	"github.com/sdvdxl/falcon-message/util"
+	"github.com/gaoquan6297/falcon-message/config"
+	"github.com/gaoquan6297/falcon-message/sender"
+	"github.com/gaoquan6297/falcon-message/util"
 	"github.com/tylerb/graceful"
 )
 

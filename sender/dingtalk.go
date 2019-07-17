@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/sdvdxl/dinghook"
+	"github.com/gaoquan6297/dinghook"
 )
 
 type DingTalk struct {
@@ -19,7 +19,7 @@ func (d *DingTalk) Send(token string, content string) error {
 
 	// 发送钉钉
 	ding := dinghook.NewDing(token)
-	result := ding.SendMessage(dinghook.Message{Content: content})
+	result := ding.SendMarkdown(dinghook.Markdown{Content: content, Title: "OPEN-FALCON告警"})
 	log.Println(result)
 	if !result.Success {
 		log.Println("token:", token)
